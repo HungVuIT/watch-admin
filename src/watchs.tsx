@@ -60,7 +60,7 @@ const WatchDetail = () => {
   const record = useRecordContext();
 
   const handleClick = () => {
-    window.location.href = "http://localhost:3000/#/shops/" + record.SID;
+    window.location.href = "https://dhwatch-admin.netlify.app/#/shops/" + record.SID;
   };
   return (
     

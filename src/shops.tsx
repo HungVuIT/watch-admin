@@ -54,7 +54,7 @@ const ShopDetail = () => {
   const record = useRecordContext();
 
   const handleClick = () => {
-    window.location.href = "http://localhost:3000/#/users/" + record.id;
+    window.location.href = "https://dhwatch-admin.netlify.app/#/users/" + record.id;
   };
   return (
     <SimpleForm>
