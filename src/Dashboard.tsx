@@ -137,21 +137,6 @@ export const Dashboard = () => {
     <>
       {dashboard && (
         <Wrapper>
-          <Information>
-            <Item>
-              <Title>Số đồng hồ trong kho:</Title>
-              <Content>{dashboard.watchCount}</Content>
-            </Item>
-            <Item>
-              <Title>Số đơn:</Title>
-              <Content>{dashboard.orderCount}</Content>
-            </Item>
-            <Item>
-              <Title>Doanh thu:</Title>
-              <Content>{dashboard.revenue._sum.total}</Content>
-            </Item>
-          </Information>
-          <br></br>
           <Watch>
             <Bar
               data={chartData}
@@ -168,8 +153,22 @@ export const Dashboard = () => {
               }}
             />
           </Watch>
+          <br></br>
 
-          
+          <Information>
+            <Item>
+              <Title>Số đồng hồ trong kho:</Title>
+              <Content>{dashboard.watchCount}</Content>
+            </Item>
+            <Item>
+              <Title>Số đơn:</Title>
+              <Content>{dashboard.orderCount}</Content>
+            </Item>
+            <Item>
+              <Title>Doanh thu:</Title>
+              <Content>{dashboard.revenue._sum.total}</Content>
+            </Item>
+          </Information>
         </Wrapper>
       )}
     </>
