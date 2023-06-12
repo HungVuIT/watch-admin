@@ -1,29 +1,22 @@
 /* eslint react/jsx-key: off */
 import * as React from "react";
-import { Admin, Resource, CustomRoutes } from "react-admin"; // eslint-disable-line import/no-unresolved
+import { Admin, Resource } from "react-admin"; // eslint-disable-line import/no-unresolved
 import { render } from "react-dom";
-import { Route } from "react-router-dom";
 
-import authProvider from "./authProvider";
-import comments from "./comments";
-import CustomRouteLayout from "./customRouteLayout";
-import CustomRouteNoLayout from "./customRouteNoLayout";
 import Layout from "./Layout";
-import { UserCreate, UserEdit, UserList } from "./users";
-import tags from "./tags";
+import authProvider from "./authProvider";
 import dataProvider from "./dataProvider";
+import { UserCreate, UserEdit, UserList } from "./users";
 import { UserIcon } from "./users/UserList";
 
 import { WatchEdit, WatchList } from "./watchs";
 
-import { defaultTheme } from "react-admin";
-import { ThemeOptions, createTheme } from "@mui/material";
-import { ShopEdit, ShopList } from "./shops";
-import { CategoryCreate, CategoryEdit, CategoryList } from "./categorys";
-import { OrderEdit, OrderList } from "./orders";
-import { BrandList, BrandEdit, BrandCreate } from "./brands";
-import { NewList, NewEdit, NewCreate } from "./news";
 import { Dashboard } from "./Dashboard";
+import { BrandCreate, BrandEdit, BrandList } from "./brands";
+import { CategoryCreate, CategoryEdit, CategoryList } from "./categorys";
+import { NewCreate, NewEdit, NewList } from "./news";
+import { OrderEdit, OrderList } from "./orders";
+import { ShopEdit, ShopList } from "./shops";
 
 
 render(

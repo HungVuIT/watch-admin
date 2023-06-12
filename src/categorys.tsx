@@ -1,29 +1,21 @@
-import { Box, Typography, makeStyles, useMediaQuery } from "@mui/material";
-import React, { CSSProperties } from "react";
+import { useMediaQuery } from "@mui/material";
+import React from "react";
 import {
-  List,
-  SimpleList,
-  Datagrid,
-  TextField,
-  EmailField,
-  EditButton,
-  ShowBase,
-  ShowButton,
-  DeleteButton,
-  TextInput,
-  SimpleForm,
-  Edit,
-  BooleanInput,
-  ImageField,
   Create,
-  useRecordContext,
-  SelectField,
-  SelectInput,
-  DateInput,
+  Datagrid,
+  DeleteButton,
+  Edit,
+  EditButton,
   FileInput,
-  TabbedForm,
   FormTab,
+  ImageField,
   ImageInput,
+  List,
+  SimpleForm,
+  SimpleList,
+  TabbedForm,
+  TextField,
+  TextInput
 } from "react-admin";
 
 export const CategoryList = () => {
@@ -71,7 +63,7 @@ export const CategoryEdit = (props) => {
 
 
 const CategoryDetail = () => {
-  const record = useRecordContext();
+  // const record = useRecordContext();
   return (
     <TabbedForm>
         <FormTab label="Chi tiết">

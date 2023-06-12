@@ -1,21 +1,12 @@
 /* eslint react/jsx-key: off */
 import PeopleIcon from '@mui/icons-material/People';
-import memoize from 'lodash/memoize';
-import { useMediaQuery, Theme } from '@mui/material';
 import * as React from 'react';
 import {
-    BulkDeleteWithConfirmButton,
     Datagrid,
     List,
-    SearchInput,
-    SimpleList,
-    TextField,
-    TextInput,
-    usePermissions,
+    TextField
 } from 'react-admin';
 
-import Aside from './Aside';
-import UserEditEmbedded from './UserEditEmbedded';
 export const UserIcon = PeopleIcon;
 
 // const getUserFilters = permissions =>

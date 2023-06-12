@@ -1,17 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Avatar,
-  Box,
   Button,
   Card,
   CardContent,
   CardHeader,
   CardMedia,
   FormControl,
-  InputLabel,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
   MenuItem,
   Select,
   Table,
@@ -20,25 +15,20 @@ import {
   TableHead,
   TableRow,
   Typography,
-  useMediaQuery,
+  useMediaQuery
 } from "@mui/material";
+import axios from "axios";
 import { useRecordContext } from "ra-core";
-import { RichTextInput, RichTextInputToolbar } from "ra-input-rich-text";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Datagrid,
   DeleteButton,
   Edit,
   EditButton,
-  ImageField,
   List,
-  Show,
-  SimpleForm,
   SimpleList,
-  TextField,
-  TextInput,
+  TextField
 } from "react-admin";
-import axios from "axios";
 
 export const OrderList = () => {
   const isSmall = useMediaQuery<any>((theme) => theme.breakpoints.down("sm"));

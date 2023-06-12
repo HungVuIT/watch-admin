@@ -1,27 +1,24 @@
-import * as React from "react";
-import { memo } from "react";
-import { ReactQueryDevtools } from "react-query/devtools";
-import {
-  AppBar,
-  Menu,
-  Layout,
-  InspectorButton,
-  MenuItemLink,
-  ToggleThemeButton,
-  defaultTheme,
-  ThemeProvider,
-} from "react-admin";
-import { PaletteOptions, ThemeOptions, Typography, createMuiTheme, createTheme } from "@mui/material";
-import BookIcon from "@mui/icons-material/Book";
-import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
-import PeopleIcon from "@mui/icons-material/People";
-import LabelIcon from "@mui/icons-material/Label";
-import WatchIcon from '@mui/icons-material/Watch';
 import CategoryIcon from '@mui/icons-material/Category';
 import DiamondIcon from '@mui/icons-material/Diamond';
-import StoreIcon from '@mui/icons-material/Store';
 import FeedIcon from '@mui/icons-material/Feed';
+import PeopleIcon from "@mui/icons-material/People";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import StoreIcon from '@mui/icons-material/Store';
+import WatchIcon from '@mui/icons-material/Watch';
+import { ThemeOptions, Typography } from "@mui/material";
+import * as React from "react";
+import { memo } from "react";
+import {
+  AppBar,
+  InspectorButton,
+  Layout,
+  Menu,
+  MenuItemLink,
+  ThemeProvider,
+  ToggleThemeButton,
+  defaultTheme,
+} from "react-admin";
+import { ReactQueryDevtools } from "react-query/devtools";
 export const darkTheme = {
     palette: {
         primary: {
@@ -100,7 +97,7 @@ const theme:ThemeOptions = ({
       },
     },
   });
-export default (props) => (
+const myLayout = (props) => (
   <>
   <ThemeProvider theme={theme}>
   <Layout {...props} appBar={MyAppBar} menu={MyMenu} />
@@ -112,3 +109,5 @@ export default (props) => (
     
   </>
 );
+
+export default myLayout

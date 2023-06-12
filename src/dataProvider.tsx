@@ -123,8 +123,8 @@
 
 // export default delayedDataProvider;
 
-import { fetchUtils } from "react-admin";
 import { stringify } from "query-string";
+import { fetchUtils } from "react-admin";
 
 const apiUrl = "https://dhwatch.onrender.com/api";
 const httpClient = (url, options: any = {}) => {

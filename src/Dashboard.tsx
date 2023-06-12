@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
@@ -26,10 +26,10 @@ export const Dashboard = () => {
       <div>
         {dashboardData ? (
           <div>
-            <Typography variant="h4">Order Count: {dashboardData.orderCount}</Typography>
-            <Typography variant="h4">Sold Count: {dashboardData.soldCount._sum.quantity}</Typography>
-            <Typography variant="h4">Revenue: {dashboardData.revenue._sum.total}</Typography>
-            <Typography variant="h4">Watch Count: {dashboardData.watchCount}</Typography>
+            <Typography variant="h4">Tổng đơn hàng: {dashboardData.orderCount}</Typography>
+            <Typography variant="h4">Số sản phẩm bán ra: {dashboardData.soldCount._sum.quantity}</Typography>
+            <Typography variant="h4">Doanh thu: {dashboardData.revenue._sum.total}</Typography>
+            <Typography variant="h4">Số đồng hồ: {dashboardData.watchCount}</Typography>
           </div>
         ) : (
           <Typography variant="body1">Loading...</Typography>

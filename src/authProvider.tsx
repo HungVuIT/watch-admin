@@ -42,7 +42,7 @@ export default {
         return Promise.resolve({
             id: localStorage.getItem('login'),
             fullName: localStorage.getItem('user'),
-            avatar: localStorage.getItem('avatar'),
+            avatar: "https://cdn-icons-png.flaticon.com/512/25/25634.png",
         });
     },
 };

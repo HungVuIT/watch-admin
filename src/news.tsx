@@ -1,19 +1,17 @@
-import { Box, Button, Typography, useMediaQuery } from "@mui/material";
-import { useRecordContext } from "ra-core";
+import { useMediaQuery } from "@mui/material";
 import { RichTextInput, RichTextInputToolbar } from "ra-input-rich-text";
 import React from "react";
 import {
-    Create,
+  Create,
   Datagrid,
   DeleteButton,
   Edit,
   EditButton,
-  ImageField,
   List,
   SimpleForm,
   SimpleList,
   TextField,
-  TextInput,
+  TextInput
 } from "react-admin";
 
 export const NewList = () => {
@@ -52,10 +50,10 @@ export const NewCreate = (props) => (
     </Create>
   );
 
-const NewTitle = () => {
-  const record = useRecordContext();
-  return <span>New {record ? `"${record.title}"` : ""}</span>;
-};
+// const NewTitle = () => {
+//   const record = useRecordContext();
+//   return <span>New {record ? `"${record.title}"` : ""}</span>;
+// };
 
 export const NewEdit = (props) => {
   return (
@@ -66,11 +64,11 @@ export const NewEdit = (props) => {
 };
 
 const NewDetail = () => {
-  const record = useRecordContext();
+  // const record = useRecordContext();
 
-  const handleClick = () => {
-    window.location.href = "http://localhost:3000/#/users/" + record.id;
-  };
+  // const handleClick = () => {
+  //   window.location.href = "http://localhost:3000/#/users/" + record.id;
+  // };
   return (
     <SimpleForm>
       <div style={{ display: "flex" }}>

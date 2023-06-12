@@ -1,4 +1,4 @@
-import { Box, Button, Paper, Typography, useMediaQuery } from "@mui/material";
+import { Button, Paper, useMediaQuery } from "@mui/material";
 import { useRecordContext } from "ra-core";
 import { RichTextInput, RichTextInputToolbar } from "ra-input-rich-text";
 import React from "react";
@@ -8,13 +8,12 @@ import {
   DeleteButton,
   Edit,
   EditButton,
-  ImageField,
   List,
   NumberInput,
   SimpleForm,
   SimpleList,
   TextField,
-  TextInput,
+  TextInput
 } from "react-admin";
 import Carousel from "react-material-ui-carousel";
 
@@ -44,10 +43,10 @@ export const WatchList = () => {
   );
 };
 
-const WatchTitle = () => {
-  const record = useRecordContext();
-  return <span>Watch {record ? `"${record.title}"` : ""}</span>;
-};
+// const WatchTitle = () => {
+//   const record = useRecordContext();
+//   return <span>Watch {record ? `"${record.title}"` : ""}</span>;
+// };
 
 export const WatchEdit = (props) => {
   return (
